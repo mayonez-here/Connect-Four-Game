@@ -1,0 +1,98 @@
+body {
+    font-family: 	Lucida Console,Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+    background: linear-gradient(to right, #0b2926 , #3bd4a1 100%);
+}
+
+h1{
+    /* font-family: Brush Script MT; */
+    transform: scale(1.8);
+}
+.container {
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid green;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0a4a09;
+    border: none;
+    /* scale: 1.3; */
+    transition: all 0.2s;
+}
+
+#game-board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 420px; /* adjust as needed */
+    margin: 0 auto;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #f2f2f2;
+}
+
+.piece {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+.red {     background: radial-gradient(#f6ff00, #d0d05b); /* red color */
+
+}
+
+.yellow {
+    background: radial-gradient(#b66161,#fc0101)/* yellow color */
+}
+
+#message {
+    font-family: Lucida Handwriting;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, #f200ff,#3bbad3  100%);
+    padding: 20px;
+    border: 2px solid #5dd269;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
